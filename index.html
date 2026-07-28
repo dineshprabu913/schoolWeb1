@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northwood Public School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 14L24 6L42 14L24 22L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M13 18V30C13 30 17 34 24 34C31 34 35 30 35 30V18" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M42 14V25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-word">Northwood<span class="brand-sub">PUBLIC SCHOOL</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#academics" class="nav-link">Academics</a>
+      <a href="#life" class="nav-link">Campus Life</a>
+      <a href="#news" class="nav-link">Bulletin</a>
+      <a href="#admissions" class="nav-link">Admissions</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="bell-btn" id="bellBtn" aria-label="Ring the school bell" title="Ring the bell">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="bell-toast" id="bellToast">🔔 There goes the bell — see you at recess.</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Est. 1962 &middot; Grades K&ndash;12 &middot; Northwood, Ontario</p>
+    <h1 class="hero-title">Curious minds.<br>Kind hearts.<br><span class="underline-swipe">Northwood roots.</span></h1>
+    <p class="hero-sub">A public school where every subject starts with a question a kid actually asked, and every kid is known by name before they're known by grade.</p>
+    <div class="hero-ctas">
+      <a href="#admissions" class="btn btn-primary">Plan a visit</a>
+      <a href="#academics" class="btn btn-ghost">See what we teach</a>
+    </div>
+  </div>
+
+  <div class="report-strip wrap">
+    <div class="stat"><span class="stat-num">480</span><span class="stat-label">students</span></div>
+    <div class="stat"><span class="stat-num">14:1</span><span class="stat-label">student&ndash;teacher ratio</span></div>
+    <div class="stat"><span class="stat-num">62</span><span class="stat-label">years running</span></div>
+    <div class="stat"><span class="stat-num">27</span><span class="stat-label">clubs &amp; teams</span></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <p class="section-kicker">Our approach</p>
+      <h2 class="section-title">We teach the kid in front of us, not the average of the class.</h2>
+      <p class="section-lead">Northwood has been a neighbourhood school since 1962 &mdash; small enough that teachers eat lunch with families they've known for a decade, and ambitious enough that our grade 8s are building robots and arguing about ethics in the same semester.</p>
+    </div>
+    <div class="about-cards">
+      <div class="value-card">
+        <span class="value-index">A</span>
+        <h3>Ask before you tell</h3>
+        <p>Lessons open with a question, not a definition. Kids arrive at the vocabulary themselves.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-index">B</span>
+        <h3>Small enough to notice</h3>
+        <p>Class sizes stay under 22 so no one finishes a year unseen.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-index">C</span>
+        <h3>Hands stay busy</h3>
+        <p>Every grade has a standing shop, garden, or studio block &mdash; not just an assembly once a term.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACADEMICS ===== -->
+<section class="section section-alt" id="academics">
+  <div class="wrap">
+    <p class="section-kicker">Academics</p>
+    <h2 class="section-title">One school, three timetables.</h2>
+
+    <div class="tabs">
+      <div class="tab-list" role="tablist">
+        <button class="tab-btn is-active" data-tab="primary" role="tab" aria-selected="true">Primary &middot; K&ndash;5</button>
+        <button class="tab-btn" data-tab="middle" role="tab" aria-selected="false">Middle &middot; 6&ndash;8</button>
+        <button class="tab-btn" data-tab="senior" role="tab" aria-selected="false">Senior &middot; 9&ndash;12</button>
+      </div>
+
+      <div class="tab-panel is-active" data-panel="primary">
+        <ul class="subject-list">
+          <li><span class="subject-time">8:45</span><span class="subject-name">Reading &amp; Phonics</span></li>
+          <li><span class="subject-time">9:40</span><span class="subject-name">Number Sense</span></li>
+          <li><span class="subject-time">10:45</span><span class="subject-name">World &amp; Wonder (science + social studies)</span></li>
+          <li><span class="subject-time">1:00</span><span class="subject-name">Art, Music &amp; Movement</span></li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="middle">
+        <ul class="subject-list">
+          <li><span class="subject-time">8:45</span><span class="subject-name">English &amp; Media Literacy</span></li>
+          <li><span class="subject-time">9:40</span><span class="subject-name">Mathematics</span></li>
+          <li><span class="subject-time">10:45</span><span class="subject-name">Science Lab</span></li>
+          <li><span class="subject-time">1:00</span><span class="subject-name">Design &amp; Technology</span></li>
+          <li><span class="subject-time">2:00</span><span class="subject-name">French or Ojibwe</span></li>
+        </ul>
+      </div>
+      <div class="tab-panel" data-panel="senior">
+        <ul class="subject-list">
+          <li><span class="subject-time">8:45</span><span class="subject-name">English Literature</span></li>
+          <li><span class="subject-time">9:40</span><span class="subject-name">Calculus / Functions</span></li>
+          <li><span class="subject-time">10:45</span><span class="subject-name">Physics, Chemistry or Biology</span></li>
+          <li><span class="subject-time">1:00</span><span class="subject-name">Civics &amp; Applied Ethics</span></li>
+          <li><span class="subject-time">2:00</span><span class="subject-name">Co-op &amp; Trades Placement</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAMPUS LIFE ===== -->
+<section class="section" id="life">
+  <div class="wrap">
+    <p class="section-kicker">Campus life</p>
+    <h2 class="section-title">Outside the timetable</h2>
+    <div class="life-grid">
+      <div class="life-card life-card--sport">
+        <h3>Sport</h3>
+        <p>Cross-country, basketball, and a badminton club that somehow outdraws the football team.</p>
+      </div>
+      <div class="life-card life-card--art">
+        <h3>Arts</h3>
+        <p>A student-run gallery in the front hallway, repainted every term by the grade currently showing.</p>
+      </div>
+      <div class="life-card life-card--make">
+        <h3>Making</h3>
+        <p>Wood shop, sewing room, and a robotics team that ships an entry to regionals every March.</p>
+      </div>
+      <div class="life-card life-card--out">
+        <h3>Outdoors</h3>
+        <p>A working garden plot per homeroom, and an annual three-day canoe trip for grades 7&ndash;8.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BULLETIN / NEWS (signature corkboard) ===== -->
+<section class="section section-cork" id="news">
+  <div class="wrap">
+    <p class="section-kicker section-kicker--light">The bulletin</p>
+    <h2 class="section-title section-title--light">Pinned to the front hall corkboard</h2>
+
+    <div class="corkboard">
+      <div class="pin-note pin-note--1">
+        <span class="tape tape--blue"></span>
+        <span class="pin-date">Mar 3</span>
+        <h3>Science Fair signups open</h3>
+        <p>Booths go fast &mdash; see Ms. Arden in Room 12 by Friday.</p>
+      </div>
+      <div class="pin-note pin-note--2">
+        <span class="tape tape--gold"></span>
+        <span class="pin-date">Mar 8</span>
+        <h3>Spring concert, 7pm gym</h3>
+        <p>Grades 4&ndash;6 band and the senior jazz combo. Doors at 6:30.</p>
+      </div>
+      <div class="pin-note pin-note--3">
+        <span class="tape tape--green"></span>
+        <span class="pin-date">Mar 14</span>
+        <h3>PA meeting &amp; bake sale</h3>
+        <p>Library, 6pm. Proceeds top up the canoe trip fund.</p>
+      </div>
+      <div class="pin-note pin-note--4">
+        <span class="tape tape--blue"></span>
+        <span class="pin-date">Mar 21</span>
+        <h3>Report cards go home</h3>
+        <p>Parent-teacher conferences the following week &mdash; book a slot online.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ADMISSIONS ===== -->
+<section class="section" id="admissions">
+  <div class="wrap admissions-grid">
+    <div>
+      <p class="section-kicker">Admissions</p>
+      <h2 class="section-title">Four steps in, not forty</h2>
+      <ol class="steps">
+        <li><span class="step-num">1</span>Send us the form below, or drop by the office.</li>
+        <li><span class="step-num">2</span>We'll call within two school days to book a visit.</li>
+        <li><span class="step-num">3</span>Spend a morning shadowing a class in your child's grade.</li>
+        <li><span class="step-num">4</span>Get your placement letter &mdash; usually the same week.</li>
+      </ol>
+    </div>
+
+    <form class="inquiry-form" id="inquiryForm" novalidate>
+      <h3>Ask us anything</h3>
+      <div class="form-row">
+        <label for="parentName">Your name</label>
+        <input type="text" id="parentName" name="parentName" required>
+        <span class="field-error" data-error-for="parentName"></span>
+      </div>
+      <div class="form-row">
+        <label for="parentEmail">Email</label>
+        <input type="email" id="parentEmail" name="parentEmail" required>
+        <span class="field-error" data-error-for="parentEmail"></span>
+      </div>
+      <div class="form-row">
+        <label for="gradeInterest">Grade you're asking about</label>
+        <select id="gradeInterest" name="gradeInterest" required>
+          <option value="" disabled selected>Choose a grade</option>
+          <option>Kindergarten</option>
+          <option>Grades 1&ndash;5</option>
+          <option>Grades 6&ndash;8</option>
+          <option>Grades 9&ndash;12</option>
+        </select>
+        <span class="field-error" data-error-for="gradeInterest"></span>
+      </div>
+      <div class="form-row">
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Send inquiry</button>
+      <p class="form-success" id="formSuccess" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-grid">
+    <div>
+      <a href="#top" class="brand brand--footer">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 14L24 6L42 14L24 22L6 14Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M13 18V30C13 30 17 34 24 34C31 34 35 30 35 30V18" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-word">Northwood</span>
+      </a>
+      <p class="footer-tag">A public school in Northwood, Ontario since 1962.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <p>118 Birchbark Lane<br>Northwood, ON K0L 1M0</p>
+    </div>
+    <div class="footer-col">
+      <h4>Reach the office</h4>
+      <p>(613) 555-0148<br>office@northwood.edu.on.ca</p>
+      <p class="office-hours">Mon&ndash;Fri, 8:00&ndash;4:00</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick links</h4>
+      <a href="#academics">Academics</a>
+      <a href="#news">Bulletin</a>
+      <a href="#admissions">Admissions</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 Northwood Public School. Built with chalk dust and good intentions.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
